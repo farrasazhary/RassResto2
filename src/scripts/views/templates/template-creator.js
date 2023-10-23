@@ -1,11 +1,10 @@
 import CONFIG from '../../globals/config';
 
 const createRestaurantItemTemplate = (restaurant) => `
-
   <div class="resto-item">
   <div class="resto-item__header">
     <img class="resto-item__header__poster" alt="${restaurant.name}"
-         src="${restaurant.pictureId ? CONFIG.BASE_IMG_URL + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}">
+         src="${restaurant.pictureId ? CONFIG.BASE_IMG_URL + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" crossorigin="anonymous" >
     <div class="resto-item__header__rating">
       <p>⭐️<span class="resto-item__header__rating__score">${restaurant.rating}</span></p>
     </div>
@@ -19,12 +18,10 @@ const createRestaurantItemTemplate = (restaurant) => `
 `;
 
 const createRestaurantDetailTemplate = (restaurant) => `
-
   <div class="detail-information">
         <h1 class="resto__title">${restaurant.name}</h1>
-        <img class="resto__poster" src="${restaurant.pictureId ? CONFIG.BASE_IMG_URL + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="${restaurant.name}"
-            alt="${restaurant.name}" />
-
+        <img class="resto__poster" src="${restaurant.pictureId ? CONFIG.BASE_IMG_URL + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="${restaurant.name} "
+            alt="${restaurant.name}" crossorigin="anonymous"/>
         <div class="information">
             <div class="resto__info">
                 <h1 class="information-title">INFORMATION</h1>
@@ -42,12 +39,12 @@ const createRestaurantDetailTemplate = (restaurant) => `
 
             <div class="food-menu">
                 <h1>Food Menu</h1>
-                <p>${restaurant.menus.foods.map((food) => food.name ).join(' | ')}</p>
+                <p>${restaurant.menus.foods.map((food) => food.name).join(' | ')}</p>
             </div>
 
             <div class="drink-menu">
                 <h1>Drink Menu</h1>
-                <p>${restaurant.menus.drinks.map((drink) => drink.name ).join(' | ')}</p>
+                <p>${restaurant.menus.drinks.map((drink) => drink.name).join(' | ')}</p>
             </div>
 
             <div class="review">

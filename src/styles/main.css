@@ -57,7 +57,7 @@ skip link
   background-color: transparent;
   border: none;
   font-size: 18px;
-  padding: 8px;
+  padding: 10px;
   cursor: pointer;
   color: #fff;
   font-size: 30px;
@@ -199,6 +199,8 @@ main {
 
 .resto-item .resto-item__content h3 a {
   color: #37c75f;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-decoration: none;
 }
 
