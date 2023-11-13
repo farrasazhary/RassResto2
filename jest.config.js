@@ -4,6 +4,7 @@
  */
 
 /** @type {import('jest').Config} */
+
 const config = {
 
   // eslint-disable-next-line max-len
@@ -16,6 +17,9 @@ const config = {
   // A map from regular expressions to paths to transformers
   transform: {
     '^.+\\.(js|ts)$': 'babel-jest',
+  },
+  globals: {
+    structuredClone,
   },
 };
 
