@@ -1,4 +1,4 @@
-import 'regenerator-runtime';
+import './vendor';
 import '../styles/main.css';
 import '../styles/responsive.css';
 import App from './views/app';

@@ -26,6 +26,12 @@
   }
 }
 
+@media  screen and (max-width: 740px) {
+  .hero {
+    background: rgba(0,0,0,0.7) url(../public/images/heros/hero-image_4-small.jpg);
+  }
+}
+
 @media screen and (min-width: 660px) {
   .app-bar {
     grid-template-columns: 1fr auto;

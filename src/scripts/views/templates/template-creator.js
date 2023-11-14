@@ -1,9 +1,11 @@
 import CONFIG from '../../globals/config';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const createRestaurantItemTemplate = (restaurant) => `
   <div class="resto-item">
   <div class="resto-item__header">
-    <img class="resto-item__header__poster" alt="${restaurant.name}"
+    <img class="lazyload resto-item__header__poster" alt="${restaurant.name}"
          src="${restaurant.pictureId ? CONFIG.BASE_IMG_URL + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" crossorigin="anonymous" >
     <div class="resto-item__header__rating">
       <p>⭐️<span class="resto-item__header__rating__score">${restaurant.rating}</span></p>
