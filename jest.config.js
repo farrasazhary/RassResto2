@@ -18,9 +18,6 @@ const config = {
   transform: {
     '^.+\\.(js|ts)$': 'babel-jest',
   },
-  globals: {
-    structuredClone,
-  },
 };
 
 module.exports = config;
