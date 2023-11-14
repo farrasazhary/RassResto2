@@ -3,7 +3,6 @@
 import FavoriteRestaurantIdb from '../src/scripts/data/favorite-restaurant-idb';
 import * as TestFactories from './helpers/testFactories';
 
-global.structuredClone = (val) => JSON.parse(JSON.stringify(val));
 describe('Liking A Resto', () => {
   const addLikeButtonContainer = () => {
     document.body.innerHTML = '<div id="likeButtonContainer"></div>';
