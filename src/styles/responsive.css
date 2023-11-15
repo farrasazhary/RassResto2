@@ -1,0 +1,88 @@
+@media screen and (max-width: 1670px){
+  .restaurants {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .information-resto {
+      flex-direction: column;
+  }
+
+  .restaurants {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .information-resto{
+      display: grid;
+      font-weight: bold;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      align-items: center;
+      align-content: center;
+  }
+  .review .card-review {
+      width: 100%;
+  }
+}
+
+@media  screen and (max-width: 740px) {
+  .hero {
+    background: rgba(0,0,0,0.7) url(../public/images/heros/hero-image_4-small.jpg);
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 4px 20px;
+  }
+ 
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em;
+  }
+ 
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+ 
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+    padding-top: 20px
+  }
+ 
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
+ 
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .app-bar .app-bar__navigation nav ul li a:hover {
+    color: #37c75f;
+  }
+}
+
+@media screen and (max-width: 600px){
+
+  .restaurants {
+    grid-template-columns: 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 450px){
+
+  .restaurants {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
